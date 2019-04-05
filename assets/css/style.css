@@ -14,7 +14,8 @@ header {
     background: #4aaaa5;
     color: #cccccc;
     padding: 0px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     float: left;
     position: relative;
     text-align: center;
@@ -52,7 +53,8 @@ li a {
 .content {
     background: #ffffff;
     border: 2px solid #dddddd; 
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
     position: relative;
     left: 12%;
     margin: 25px;
@@ -121,4 +123,30 @@ input  {
 #submit {
     background: #4aaaa5;
     color: #dddddd;
+}
+
+@media screen and (max-width: 960px) {
+   
+    .content {
+        width: 60%;
+        background: #ffffff;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        width: 60%
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #name {
+        width: 100%;
+    } 
+   
+    .list {
+        width: 100%;
+        float: left;
+    }
 }
